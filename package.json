@@ -1,0 +1,41 @@
+{
+  "author": {
+    "name": "Aditya Patadia"
+  },
+  "bugs": {
+    "email": "support@gumlet.com"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Temporary fork of gumlet until upstream fixes blocking issues",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babelify": "^10.0.0",
+    "browserify": "^16.5.1",
+    "gulp": "^4.0.2",
+    "gulp-concat": "2.6.1",
+    "gulp-uglify": "^3.0.2",
+    "jest": "^25.5.4",
+    "jest-puppeteer": "^4.4.0",
+    "puppeteer": "^2.1.1",
+    "uglify-js": "^3.9.3",
+    "url-parse": "^1.4.7"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "license": "MIT",
+  "main": "dist/gumlet.min.js",
+  "name": "gumlet.js",
+  "scripts": {
+    "build": "gulp build",
+    "test": "gulp build-js && jest",
+    "watch": "gulp watch"
+  },
+  "version": "2.0.1"
+}
